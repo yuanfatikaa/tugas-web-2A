@@ -1,5 +1,5 @@
 h1 {
-    color:;
+    color:blue;
     font-size: 30px;
 }
 
@@ -8,7 +8,12 @@ p {
     font-size: 30px;
 }
 
-h2 {
-    color:black
-    font-size: 20px;
+h2 { 
+    color:bisque;
+    font-size: 30px;
 }
+
+
+
+
+/* untuk h2 ukuran font 20px */
