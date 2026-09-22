@@ -1,0 +1,16 @@
+/* untuk H1 warna nud blue dan ukuran font 30px */
+h1 {
+    color:aquamarine;
+    font-size: 30px;
+}
+
+/*untuk p warna bisque dan ukuran font 10px */
+p { 
+    color:bisque;
+    font-size: 10px;
+}
+
+/* untuk h2 ukuran font 20px */
+h2 {
+    font-size: 20px;
+}
