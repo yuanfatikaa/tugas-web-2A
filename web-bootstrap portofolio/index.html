@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile - Devana Putri Yuanfatika</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Custom Styling tambahan */
+        .hero-section {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 100px 0;
+        }
+        .about-section {
+            background-color: #f4f7f6;
+            padding: 80px 0;
+        }
+        .portfolio-section {
+            background-color: #ffffff;
+            padding: 80px 0;
+        }
+        /* Mengatur kontainer gambar agar seragam, rapi, dan foto tidak terpotong (crop) */
+        .portfolio-img-wrapper {
+            height: 220px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .portfolio-img-wrapper img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain; /* Memastikan seluruh gambar terlihat utuh tanpa ter-crop */
+        }
+        .contact-section {
+            background-color: #eef2f3;
+            padding: 80px 0;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">MyProfile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <img src="img/Pictures/devana.jpeg" alt="Foto Profil" class="rounded-circle img-thumbnail mb-4 shadow" style="width: 150px; height: 150px; object-fit: cover;">
+            <h1 class="display-4 fw-bold mb-3">Halo, Saya <span class="text-info">Devana Putri Yuanfatika</span></h1>
+            <p class="lead mb-4">Pendaki Pemula | Menjelajahi Alam, Menguji Ketahanan & Menikmati Proses</p>
+            <a href="#portfolio" class="btn btn-info btn-lg text-dark fw-semibold px-4 me-2">Lihat Portofolio</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Hubungi Saya</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">About Me</h2>
+                    <hr class="w-25 mx-auto bg-primary">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <img src="img/Pictures/devana2.jpeg" alt="About Me" class="img-fluid rounded shadow" style="max-height: 350px; object-fit: cover;">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="fw-semibold mb-3">Siapa Saya?</h3>
+                    <p class="text-muted">Saya adalah seorang individu yang antusias dan selalu bersemangat mencoba hal-hal baru. Memiliki ketertarikan besar pada kegiatan luar ruangan, khususnya mendaki gunung, yang mengajarkan saya arti kesabaran, manajemen persiapan, ketahanan mental, serta kerja sama tim dalam menghadapi berbagai tantangan.</p>
+                    
+                    <div class="mt-4">
+                        <div class="mb-2">
+                            <strong><i class="bi bi-chevron-right text-primary"></i> Hobi Utama:</strong> Mendaki Gunung & Menjelajahi Alam Bebas
+                        </div>
+                        <div class="mb-2">
+                            <strong><i class="bi bi-chevron-right text-primary"></i> Filosofi Perjalanan:</strong> Fokus pada proses, saling mendukung tim, dan terus melangkah maju sampai titik puncak.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTOFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">Portofolio & Ekspedisi</h2>
+                    <p class="text-muted">Catatan perjalanan dan pengalaman petualangan pendakian saya</p>
+                    <hr class="w-25 mx-auto bg-primary">
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Portofolio 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/Pictures/devana3.jpeg" alt="Ekspedisi 1">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Ekspedisi Gunung Wilis</h5>
+                            <p class="card-text text-muted">Perjalanan pendakian menantang via jalur Tambelang-Dolo, menguji ketahanan fisik dan mental sebagai pendaki pemula.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portofolio 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/Pictures/devana5.jpeg" alt="Ekspedisi 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Persiapan & Manajemen Logistik</h5>
+                            <p class="card-text text-muted">Belajar merencanakan perlengkapan keselamatan, pengaturan ransel (packing), dan pemenuhan nutrisi di alam bebas.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portofolio 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/Pictures/devana4.jpeg" alt="Ekspedisi 3">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Solidaritas Tim & Konservasi</h5>
+                            <p class="card-text text-muted">Membangun komunikasi yang kuat antar anggota tim pendakian serta menerapkan prinsip menjaga kelestarian alam.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="fw-bold">Contact Me</h2>
+                    <p class="text-muted">Mari terhubung atau berdiskusi seputar petualangan dan hobi bersama</p>
+                    <hr class="w-25 mx-auto bg-primary">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tuliskan pesan atau pertanyaan Anda..." required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark btn-lg">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Devana Putri Yuanfatika. All Rights Reserved.</p>
+            <div class="social-icons fs-4 mt-2">
+                <a href="#" class="text-light me-3"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
