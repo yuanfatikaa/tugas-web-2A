@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Sederhana</title>
+</head>
+<body>
+    
+    <h1>Program Kasir Sederhana</h1>
+
+    <script type="text/javascript">
+        // 1. Input data menggunakan prompt
+        let namaBarang = prompt("Masukkan nama barang:");
+        let hargaBarang = parseFloat(prompt("Masukkan harga barang:"));
+        let qty = parseInt(prompt("Masukkan jumlah beli (qty):"));
+
+        // 2. Hitung total belanja
+        let totalKotor = hargaBarang * qty;
+        let diskon = 0;
+
+        // 3. Cek diskon 10% jika total lebih dari 50.000
+        if (totalKotor > 50000) {
+            diskon = totalKotor * 0.10;
+        }
+
+        let pembayaran = totalKotor - diskon;
+
+        // 4. Menampilkan hasil dengan document.write dan format teks seperti di soal
+        document.write("<pre>");
+        document.write("++++++++++++++++++++++++++++++++++++++\n");
+        document.write("+                                    +\n");
+        document.write("+  nama       Harga   qty   total    +\n");
+        document.write("+  " + namaBarang.padEnd(10, ' ') + "  " + hargaBarang.toString().padEnd(6, ' ') + "  " + qty.toString().padEnd(3, ' ') + "  " + totalKotor.toString().padEnd(8, ' ') + "+\n");
+        document.write("+                                    +\n");
+        document.write("+  total belanja   " + totalKotor.toString().padEnd(10, ' ') + "  +\n");
+        document.write("+  diskons         " + diskon.toString().padEnd(10, ' ') + "  +\n");
+        document.write("+  pembayaran      " + pembayaran.toString().padEnd(10, ' ') + "  +\n");
+        document.write("+                                    +\n");
+        document.write("++++++++++++++++++++++++++++++++++++++");
+        document.write("</pre>");
+    </script>
+</body>
+</html>
