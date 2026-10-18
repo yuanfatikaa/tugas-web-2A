@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Belajar DOM</title>
+  </head>
+  <body>
+    <!-- 1. Elemen dengan ID judul -->
+    <h1 id="judul">Belajar DOM</h1>
+
+    <!-- 2. Beberapa elemen paragraf <p> -->
+    <p>
+      paragraf 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Recusandae aspernatur sapiente nulla maiores possimus. Quibusdam quod
+      tenetur dolorem, quas natus harum commodi fuga distinctio reiciendis
+      provident dolore illum saepe veniam!
+    </p>
+
+    <p>
+      paragraf 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Consequuntur architecto natus nisi error ducimus ea voluptates tempore,
+      labore deserunt, necessitatibus illum, aliquid voluptatem nemo obcaecati
+      ratione reiciendis molestiae alias cupiditate.
+    </p>
+
+    <!-- 3. Elemen list dengan class daftar -->
+    <h3>Dftar</h3>
+    <ul>
+      <li class="daftar">Argentina</li>
+      <li class="daftar">America</li>
+      <li class="daftar">India</li>
+      <li class="daftar">Indonesia</li>
+      <li class="daftar">Belanda</li>
+    </ul>
+
+    <!-- 4. Kumpulan kode JavaScript DOM sesuai urutan di artikel -->
+    <script>
+      // Mengambil elemen berdasarkan ID
+      let judul = document.getElementById("judul");
+      console.log(judul);
+
+      // Mengambil semua elemen berdasarkan Nama Tag (<P>)
+      let p = document.getElementsByTagName("p");
+      console.log(p);
+
+      // Mengambil elemen berdasarkan Class Name ('daftar')
+      let daftar = document.getElementsByClassName("daftar");
+      console.log(daftar);
+    </script>
+  </body>
+</html>
